@@ -62,7 +62,7 @@ p{margin:0}
 .photo figcaption{position:relative;padding:14px 18px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;display:flex;gap:10px;align-items:center}
 .photo figcaption::before{content:"";width:22px;height:4px;background:var(--red)}
 .photos{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-top:40px}
-@media (max-width:700px){.photos{grid-template-columns:1fr}.photo{min-height:200px}}
+@media (max-width:700px){.photos{grid-template-columns:1fr}.photo{min-height:200px;max-width:100%}}
 .stage{padding-block:0}
 .photo.has::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 42%)}
 .photo.has figcaption{z-index:1;position:relative}
@@ -96,6 +96,8 @@ p{margin:0}
 .frame{display:grid;grid-template-columns:auto 1fr;gap:24px 40px;align-items:center;margin-top:56px;padding:28px 30px;background:var(--ink);color:var(--paper)}
 .frame h3{font-size:1.4rem}
 .frame p{color:#cfc9c6;max-width:46rem}
+.frame ul{margin:14px 0 0;padding-left:1.1em;color:#cfc9c6;max-width:46rem}
+.frame li{margin:6px 0}
 .frame .badge{font-family:var(--display);font-weight:800;font-size:3.4rem;line-height:1;color:#ff6a6a}
 @media (max-width:700px){.frame{grid-template-columns:1fr}}
 
@@ -289,15 +291,22 @@ img{max-width:100%}
       </article>
       <article>
         <h3>La liberté de gérer</h3>
-        <p>Le franchisé décide de son équipe, de son organisation et de la vie de son magasin.</p>
+        <p>Le franchisé reste chef d'entreprise : il recrute son équipe, fixe librement ses prix de vente et conduit la gestion de son magasin, dans le cadre des standards du réseau.</p>
       </article>
     </div>
 
     <div class="frame">
-      <div class="badge">1</div>
+      <div class="badge">5</div>
       <div>
-        <h3>Une seule contrainte : un outil de gestion commun</h3>
-        <p>L'expérience du premier magasin l'a montré : les stocks doivent être visibles de tout le réseau, et cela suppose le même logiciel pour tous. C'est la seule liberté que nous retirons.</p>
+        <h3>Des règles communes, connues avant de signer</h3>
+        <p>Un réseau tient par des standards partagés. Ils figurent tous au contrat, et le franchisé les connaît avant de s'engager :</p>
+        <ul>
+          <li>le même logiciel de gestion pour tous, pour que les stocks soient visibles de tout le réseau ;</li>
+          <li>les achats auprès du réseau, avec Mont Royal comme verrier principal ;</li>
+          <li>les opérations promotionnelles nationales, appliquées dans chaque magasin ;</li>
+          <li>l'agencement, la charte graphique et la validation des supports de communication ;</li>
+          <li>le protocole de vente et les audits de suivi.</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -441,6 +450,8 @@ img{max-width:100%}
           <li>Exercer dans le respect de la réglementation de l'optique, avec du personnel diplômé.</li>
           <li>Appliquer les standards d'accueil, de conseil et de suivi.</li>
           <li>Utiliser l'outil de gestion commun.</li>
+          <li>Se fournir auprès du réseau et appliquer les opérations promotionnelles nationales.</li>
+          <li>Transmettre chaque mois son chiffre d'affaires, et chaque année ses comptes.</li>
           <li>Régler les redevances aux échéances prévues.</li>
           <li>Préserver l'image du réseau et la confidentialité du savoir-faire.</li>
         </ol>
@@ -456,7 +467,7 @@ img{max-width:100%}
     <p class="lead2">Nous avons développé un outil de calcul de rentabilité. Avant tout engagement, il met en regard la situation d'un opticien indépendant aujourd'hui et sa situation après le passage au réseau.</p>
 
     <div class="sim-points">
-      <div><b>Avant de signer</b><span>La différence est visible dès le départ, avant le moindre engagement.</span></div>
+      <div><b>Avant de signer</b><span>Les écarts, favorables ou non, sont chiffrés année par année avant le moindre engagement.</span></div>
       <div><b>Vos chiffres</b><span>Le calcul part de la situation réelle du magasin, pas de moyennes.</span></div>
       <div><b>Un choix éclairé</b><span>Chacun mesure ce que le passage au réseau change pour lui.</span></div>
     </div>
@@ -470,7 +481,7 @@ img{max-width:100%}
     <ol class="steps">
       <li><b>Premier échange</b><span>Présentation du réseau.</span></li>
       <li><b>Information</b><span>Remise du document d'information précontractuelle.</span></li>
-      <li><b>Rencontres</b><span>Visite de boutiques, échange avec des franchisés.</span></li>
+      <li><b>Rencontres</b><span>Visite des boutiques du groupe et du premier magasin franchisé.</span></li>
       <li><b>Étude du projet</b><span>Emplacement, financement, simulation de rentabilité.</span></li>
       <li><b>Réflexion</b><span>Délai de réflexion, puis signature.</span></li>
       <li><b>Ouverture</b><span>Formation et préparation du magasin.</span></li>
